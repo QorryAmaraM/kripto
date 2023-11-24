@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Vigenere Cipher</title>
+        <link rel="stylesheet" href="styles.css">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    </head>
+    <body>
+        <h2>KALKULATOR VIGENERE CIPHER</h2>
+        <h4>Qorry Amara Mardhatillah - 21120120140145</h4>
+
+        <div class="card">
+            <h2>Enkripsi</h2>
+
+            <label for="plaintext">Plaintext:</label>
+            <input type="text" id="plaintextEncrypt" placeholder="Masukkan Plaintext">
+
+            <label for="key">Kunci:</label>
+            <input type="text" id="keyEncrypt" placeholder="Masukkan Kunci">
+
+            <button onclick="encrypt()">Enkripsi</button>
+
+            <label for="result">Ciphertext:</label>
+            <textarea id="resultEncrypt" readonly="readonly"></textarea>
+        </div>
+
+        <div class="card">
+            <h2>Dekripsi</h2>
+
+            <label for="ciphertext">Ciphertext:</label>
+            <input type="text" id="ciphertextDecrypt" placeholder="Masukkan Ciphertext">
+
+            <label for="key">Kunci:</label>
+            <input type="text" id="keyDecrypt" placeholder="Masukkan Kunci">
+
+            <button onclick="decrypt()">Dekripsi</button>
+
+            <label for="result">Plaintext:</label>
+            <textarea id="resultDecrypt" readonly="readonly"></textarea>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
